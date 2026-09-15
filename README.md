@@ -1,3 +1,4 @@
+![Mini SOC Banner](mini-soc-banner.png)
 # Mini SOC — Windows Log Monitoring & Alert Detection
 
 ## Project Overview
