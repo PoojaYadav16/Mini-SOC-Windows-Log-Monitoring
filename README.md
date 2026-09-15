@@ -55,6 +55,7 @@ Windows 11 Endpoint
                                v
                          SOC Analyst
 ```
+![Mini SOC Project Architecture](architecture/Mini%20SOC%20Project%20Architecture.png)
 
 ## Technologies Used
 
@@ -127,8 +128,8 @@ The generated alert provided the following information:
 
 | Field | Value |
 |---|---|
-| Host | `laptop-hda0g1el` |
-| User | `HP` |
+| Host | `SOC-WINDOWS-PC` |
+| User | `SOC-USER` |
 | Event ID | `4625` |
 | Source IP | `127.0.0.1` |
 | Logon Type | `2 — Interactive` |
@@ -156,9 +157,7 @@ This screenshot shows the generated Elastic Security alert and its main details.
 
 ### Evidence 3B — Alert Investigation
 
-![Evidence 3B — Alert Investigation](evidence/Evidence%203B%20%E2%80%94%20Alert%20Overview.png)
-
-This screenshot shows the investigation fields associated with the alert.
+![Evidence 3B — Alert Investigation Fields](evidence/Evidence%203B%20%E2%80%94%20Alert%20Overview.png)
 
 ---
 
@@ -166,13 +165,11 @@ This screenshot shows the investigation fields associated with the alert.
 
 ![Evidence 3C — Alert Details](evidence/Evidence%203C%20%E2%80%94%20Alert%20Overview.png)
 
-This screenshot provides additional alert investigation evidence.
-
 ---
 
 ### Windows Overview Dashboard
 
-![Windows Overview Dashboard](evidence/Windowsoverview.png)
+![Windows Overview](evidence/Windowsoverview.png)
 
 The Windows Overview dashboard provides visibility into Windows events collected by Elastic Security.
 
@@ -180,7 +177,7 @@ The Windows Overview dashboard provides visibility into Windows events collected
 
 ### Windows Security Dashboard
 
-![Windows Security Dashboard](evidence/Windowsoverview2.png)
+![Windows Overview 2](evidence/Windowsoverview2.png)
 
 This dashboard provides an overview of Windows security-related activity.
 
@@ -188,7 +185,7 @@ This dashboard provides an overview of Windows security-related activity.
 
 ### Failed & Blocked Accounts Dashboard
 
-![Failed and Blocked Accounts](evidence/failed%26block%20accounts.png)
+![Failed and Blocked Accounts](evidence/failed-block accounts.png)
 
 This dashboard shows failed authentication activity collected from the Windows endpoint.
 
@@ -198,7 +195,7 @@ The failed logon events include Event ID 4625 activity generated during the proj
 
 ### User Logons Dashboard
 
-![User Logons Dashboard](evidence/userlogons.png)
+![User Logons](evidence/userlogons.png)
 
 This dashboard provides visibility into Windows user logon activity.
 
@@ -241,7 +238,7 @@ This mapping represents the detection scenario used in the lab and does not conf
 
 The complete detection workflow demonstrated in this project is:
 
-```text
+```
 Failed Windows Login
         |
         v
@@ -307,7 +304,7 @@ The project can be extended by adding:
 
 ## Project Structure
 
-```text
+```
 Mini-SOC-Windows-Log-Monitoring/
 |
 +-- architecture/
@@ -319,7 +316,7 @@ Mini-SOC-Windows-Log-Monitoring/
 |   +-- Evidence 3C — Alert Overview.png
 |   +-- Windowsoverview.png
 |   +-- Windowsoverview2.png
-|   +-- failed&block accounts.png
+|   +-- failed-block accounts.png
 |   +-- userlogons.png
 |
 +-- incident-reports/
@@ -332,6 +329,4 @@ Mini-SOC-Windows-Log-Monitoring/
 
 ## Disclaimer
 
-This project was created for **educational and cybersecurity lab purposes**.
-
-All suspicious activity was intentionally generated on my own Windows endpoint for detection testing. No unauthorized systems or accounts were targeted.
+This project was created for **educational and cybersecurity lab purposes**. All suspicious activity was intentionally generated on my own Windows endpoint for detection testing. No unauthorized systems or accounts were targeted.
