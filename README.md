@@ -324,9 +324,18 @@ Mini-SOC-Windows-Log-Monitoring/
 |
 +-- README.md
 ```
-
 ---
 
 ## Disclaimer
 
 This project was created for **educational and cybersecurity lab purposes**. All suspicious activity was intentionally generated on my own Windows endpoint for detection testing. No unauthorized systems or accounts were targeted.
+
+---
+
+## Author
+
+**Pooja Yadav**
+
+Aspiring Cybersecurity / SOC Analyst
+
+[LinkedIn](https://www.linkedin.com/in/-yadav-567438pooja230/) | [GitHub](https://github.com/PoojaYadav16)
